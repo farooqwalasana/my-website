@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html>
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Little Friends Junior School</title>
+
+  <style>
+    *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Segoe UI",Arial,sans-serif;
+}
+
+
+body{
+
+    min-height:100vh;
+
+    background:
+    linear-gradient(
+    135deg,
+    #1565c0,
+    #43a047,
+    #ffd600
+    );
+
+    color:#333;
+
+}
+
+
+
+/* HEADER */
+
+header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px 50px;
+
+    background:rgba(255,255,255,.18);
+
+    backdrop-filter:blur(10px);
+
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+
+}
+
+
+
+.logo h2{
+
+    color:white;
+
+    font-size:28px;
+
+}
+
+
+
+.logo p{
+
+    color:#ffe082;
+
+    font-style:italic;
+
+}
+
+
+
+
+/* NAVIGATION */
+
+
+nav a{
+
+    text-decoration:none;
+
+    color:white;
+
+    margin-left:20px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+
+
+nav a:hover,
+.active{
+
+    color:#ffe082;
+
+}
+
+
+
+
+
+/* HERO SECTION */
+
+
+.hero{
+
+    height:75vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    color:white;
+
+
+    background:
+
+    linear-gradient(
+    rgba(0,0,0,.4),
+    rgba(0,0,0,.4)
+    ),
+
+    url("../images/school1.jpg");
+
+
+    background-size:cover;
+
+    background-position:center;
+
+}
+
+
+
+.hero-content{
+
+    background:rgba(255,255,255,.15);
+
+    padding:40px;
+
+    border-radius:25px;
+
+    backdrop-filter:blur(10px);
+
+    animation:show 1s ease;
+
+}
+
+
+
+.hero h1{
+
+    font-size:45px;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.hero h2{
+
+    color:#ffd600;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.hero p{
+
+    font-size:20px;
+
+    max-width:650px;
+
+}
+
+
+
+
+
+button{
+
+    margin-top:25px;
+
+    padding:15px 40px;
+
+    border:none;
+
+    border-radius:30px;
+
+    background:#ffd600;
+
+    color:#333;
+
+    font-size:17px;
+
+    cursor:pointer;
+
+    font-weight:bold;
+
+}
+
+
+
+
+
+button:hover{
+
+    transform:translateY(-5px);
+
+}
+
+
+
+
+
+/* ANIMATION */
+
+
+@keyframes show{
+
+from{
+
+opacity:0;
+
+transform:translateY(40px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+
+
+
+
+/* IMAGE SLIDER */
+
+
+.slider{
+
+    display:flex;
+
+    justify-content:center;
+
+    padding:40px;
+
+}
+
+
+
+.slider img{
+
+    width:80%;
+
+    max-height:400px;
+
+    object-fit:cover;
+
+    border-radius:25px;
+
+    box-shadow:0 15px 30px rgba(0,0,0,.3);
+
+}
+
+
+
+
+
+/* ANNOUNCEMENTS */
+
+
+.announcements,
+.vision,
+.quick-links{
+
+    background:white;
+
+    margin:40px;
+
+    padding:35px;
+
+    border-radius:25px;
+
+    text-align:center;
+
+    box-shadow:
+    0 15px 30px rgba(0,0,0,.2);
+
+}
+
+
+
+.announcements h1,
+.vision h1,
+.quick-links h1{
+
+    color:#1565c0;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.announcement-box p{
+
+    padding:12px;
+
+    font-size:18px;
+
+}
+
+
+
+
+
+/* QUICK CARDS */
+
+
+.cards{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:25px;
+
+    flex-wrap:wrap;
+
+}
+
+
+
+.card{
+
+    width:260px;
+
+    padding:30px;
+
+    background:#f5f9ff;
+
+    border-radius:20px;
+
+    transition:.3s;
+
+}
+
+
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+
+
+.card h3{
+
+    color:#1565c0;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.card a{
+
+    text-decoration:none;
+
+    color:#43a047;
+
+    font-weight:bold;
+
+}
+
+
+
+
+
+/* FOOTER */
+
+
+footer{
+
+    background:rgba(0,0,0,.25);
+
+    color:white;
+
+    text-align:center;
+
+    padding:20px;
+
+}
+
+
+
+
+/* MOBILE RESPONSIVE */
+
+
+@media(max-width:900px){
+
+
+header{
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+
+
+nav{
+
+    text-align:center;
+
+}
+
+
+
+nav a{
+
+    display:inline-block;
+
+    margin:8px;
+
+    font-size:14px;
+
+}
+
+
+
+.hero h1{
+
+    font-size:30px;
+
+}
+
+
+
+.hero-content{
+
+    width:90%;
+
+}
+
+
+
+.slider img{
+
+    width:95%;
+
+}
+
+
+
+.announcements,
+.vision,
+.quick-links{
+
+    margin:20px;
+
+}
+
+
+
+}
+  </style>
+
+  
+</head>
+<body>
+  <link rel="stylesheet" href="css/style.css">
+
+
+
+
+
+
+
+<!-- HEADER -->
+
+<header>
+
+
+<div class="logo">
+
+<h2>
+Little Friends Junior School
+</h2>
+
+<p>
+Quest For Excellence
+</p>
+
+</div>
+
+
+
+<nav>
+
+<a href="index.html" class="active">Home</a>
+
+<a href="about.html">About Us</a>
+
+<a href="academics.html">Academics</a>
+
+<a href="admissions.html">Admissions</a>
+
+<a href="news.html">News</a>
+
+<a href="gallery.html">Gallery</a>
+
+<a href="events.html">Events</a>
+
+<a href="contact.html">Contact</a>
+
+</nav>
+
+
+</header>
+
+
+
+
+
+<!-- HERO SECTION -->
+
+<section class="hero">
+
+
+<div class="hero-content">
+
+
+<h1>
+Welcome to Little Friends Junior School
+</h1>
+
+
+<h2>
+Quest For Excellence
+</h2>
+
+
+<p>
+Providing quality education, discipline and creativity
+to build confident learners for the future.
+</p>
+
+
+<button>
+Enroll Now
+</button>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<!-- IMAGE SLIDER -->
+
+<section class="slider">
+
+
+<img src="images/school1.jpg" id="slideImage">
+
+
+</section>
+
+
+
+
+
+<!-- ANNOUNCEMENTS -->
+
+
+<section class="announcements">
+
+
+<h1>
+Latest Announcements
+</h1>
+
+
+<div class="announcement-box">
+
+
+<p>
+📢 Admissions are open for the new academic year.
+</p>
+
+
+<p>
+📢 Examination timetable has been released.
+</p>
+
+
+<p>
+📢 Parents meeting will be held soon.
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- VISION SECTION -->
+
+
+<section class="vision">
+
+
+<h1>
+Our Vision
+</h1>
+
+
+<p>
+To become a leading institution providing quality
+education that nurtures excellence, creativity and
+responsibility among learners.
+</p>
+
+
+</section>
+
+
+
+
+
+
+<!-- QUICK LINKS -->
+
+
+<section class="quick-links">
+
+
+<h1>
+Quick Links
+</h1>
+
+
+<div class="cards">
+
+
+<div class="card">
+
+<h3>
+📚 Academics
+</h3>
+
+<a href="academics.html">
+Explore
+</a>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h3>
+📝 Admissions
+</h3>
+
+<a href="admissions.html">
+Apply Now
+</a>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h3>
+👨‍🎓 Student Portal
+</h3>
+
+<a href="student/login.html">
+Login
+</a>
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- FOOTER -->
+
+
+<footer>
+
+
+<p>
+© 2026 Little Friends Junior School
+</p>
+
+
+<p>
+Quest For Excellence
+</p>
+
+
+</footer>
+
+
+
+<script src="js/script.js"></script>
+
+  <script>
+    // Little Friends Junior School
+// Home Page JavaScript
+
+
+// IMAGE SLIDER
+
+let images = [
+
+    "images/school1.jpg",
+
+    "images/school2.jpg",
+
+    "images/school3.jpg"
+
+];
+
+
+let currentImage = 0;
+
+
+let slideImage = document.getElementById("slideImage");
+
+
+
+function changeSlide(){
+
+
+    currentImage++;
+
+
+    if(currentImage >= images.length){
+
+        currentImage = 0;
+
+    }
+
+
+
+    slideImage.style.opacity = 0;
+
+
+
+    setTimeout(()=>{
+
+
+        slideImage.src = images[currentImage];
+
+
+        slideImage.style.opacity = 1;
+
+
+    },500);
+
+
+}
+
+
+
+
+setInterval(changeSlide,4000);
+
+
+
+
+
+// WELCOME MESSAGE
+
+
+window.onload = function(){
+
+
+    console.log(
+        "Welcome to Little Friends Junior School - Quest For Excellence"
+    );
+
+
+};
+  </script>
+</body>
+</html>
